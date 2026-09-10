@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevSnippet - Share Code Easily</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .snippet-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <!-- Logo / Title Section -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold text-primary">⚡ DevSnippet</h1>
+            <p class="text-muted">Share your code snippets securely with expiry time</p>
+        </div>
+        <!-- Main Form Card -->
+        <div class="card snippet-card p-4 w-100" style="max-width: 600px;">
+
+                <!-- Title Input -->
+                <div class="mb-3">
+                    <label for="titleBox" class="form-label fw-semibold">Snippet Title</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Enter title here..." required>
+                </div>
+
+                <!-- Code / Content Textarea -->
+                <div class="mb-3">
+                    <label for="contentBox" class="form-label fw-semibold">Your Code / Text</label>
+                    <textarea class="form-control font-monospace" id="clienttext" name="test" rows="6" placeholder="Paste your code or text here..." required></textarea>
+                </div>
+
+                <!-- Expiry Duration Dropdown -->
+                <div class="mb-3">
+                    <label for="durationBox" class="form-label fw-semibold">Expiry Duration (Hours)</label>
+                    <select class="form-select" id="durtiontime" name="durtiontime">
+                        <option value="1">1 Hour</option>
+                        <option value="6" selected>6 Hours</option>
+                        <option value="24">24 Hours (1 Day)</option>
+                        <option value="72">72 Hours (3 Days)</option>
+                    </select>
+                </div>
+                <div class="alert alert-info" role="alert" id="responds">
+                    when you click on create snippet, your snippet will be created and you will get a link to share. The snippet will expire after the selected duration.
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg fw-semibold" onclick="submit()">Create Snippet</button>
+                </div>
+        </div>
+        
+
+        
+        <!-- Footer -->
+        <div class="text-center mt-4 text-muted small">
+            &copy; 2026 DevSnippet. Built with Flask & MySQL.
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function submit(){
+
+        var title = document.getElementById("title").value
+        var clienttext=document.getElementById("clienttext").value;
+        var durtiontime =document.getElementById("durtiontime").value;
+
+        console.log(clienttext);
+        console.log(durtiontime);
+        console.log(title);
+
+        var xmlhttp = new  XMLHttpRequest();
+        xmlhttp.onreadystatechange = function(){
+            if(this.readyState == 4 && this.status == 200){
+                console.log(this.response);
+                document.getElementById("responds").innerHTML = this.response;
+
+            }
+        }
+        xmlhttp.open("POST","http://127.0.0.1:5000/main.py",true);
+        xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xmlhttp.send("test="+encodeURIComponent(clienttext)+"&title="+encodeURIComponent(title)+"&durtiontime="+encodeURIComponent(durtiontime));
+
+     }
+    </script>
+</body>
+</html>

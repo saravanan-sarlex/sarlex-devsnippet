@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Snippet - DevSnippet</title>
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .snippet-card {
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100">
+        <!-- Logo / Title Section -->
+        <div class="text-center mb-4">
+            <h1 class="fw-bold text-primary">⚡ DevSnippet</h1>
+            <h3 id="titleBox" class="text-secondary mt-2">Loading Title...</h3>
+        </div>
+
+        <!-- Content Display Card -->
+        <div class="card snippet-card p-4 w-100" style="max-width: 700px;">
+            <div class="mb-3">
+                <label class="form-label fw-semibold text-muted">Snippet Content</label>
+                <textarea id="contentBox" class="form-control font-monospace bg-light" rows="10" readonly></textarea>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="d-flex justify-content-between">
+                <button id="copyButton" class="btn btn-outline-primary">📋 Copy to Clipboard</button>
+                <button class="btn btn-secondary" onclick="window.history.back()">⬅ Back</button>
+            </div>
+        </div>
+    </div>
+        <!-- Bootstrap JS Bundle CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+
+    var copyButton = document.querySelector('#copyButton');
+    copyButton.addEventListener('click', function() {
+        var textarea = document.querySelector('#contentBox');
+        textarea.select();
+        document.execCommand('copy');
+    });
+    const urlParams = new URLSearchParams(window.location.search);
+    const slug = urlParams.get('data');
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', `http://127.0.0.1:5000/get_snippet?slug=${slug}`, true);
+    xhr.onreadystatechange = function() {
+        if (this.readyState === 4 && this.status === 200) {
+
+            let res = JSON.parse(this.responseText);
+            console.log(res);
+            document.querySelector('#contentBox').value = res.content;
+            console.log(res.title);
+            if (res.title !== null && res.title !== undefined) {
+                document.getElementById('titleBox').innerText = res.title;
+            } else {
+                document.getElementById('titleBox').innerText = 'snippeted details';
+            }
+        }
+    };
+    xhr.send();
+    console.log(slug);
+</script>>
+</html>
