@@ -114,3 +114,84 @@ Error occurred while deleting expired snippets: no such function: now
 Error occurred while deleting expired snippets: no such function: now
 Error occurred while deleting expired snippets: no such function: now
 Error occurred while deleting expired snippets: no such function: now
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:52: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
+/home/saravanan/saravanan/snipper/batch/snippet_data_expired_deleting.py:11: DeprecationWarning: The default datetime adapter is deprecated as of Python 3.12; see the sqlite3 documentation for suggested replacement recipes
+  cursor.execute("DELETE FROM snippets WHERE expires_at < ?", (current_time,))
+Expired snippets deleted successfully: 0
